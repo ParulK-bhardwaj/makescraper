@@ -1,0 +1,104 @@
+{
+ "restaurants": [
+  {
+   "name": "GreyGardens",
+   "cuisine": "$$$·Contemporary",
+   "rating": "Bib Gourmand"
+  },
+  {
+   "name": "Alo",
+   "cuisine": "$$$$·Contemporary",
+   "rating": "1 star"
+  },
+  {
+   "name": "TheAce",
+   "cuisine": "$$·Gastropub",
+   "rating": "Bib Gourmand"
+  },
+  {
+   "name": "KaisekiYu-zenHashimoto",
+   "cuisine": "$$$$·Japanese",
+   "rating": "1 star"
+  },
+  {
+   "name": "KappoSato",
+   "cuisine": "$$$$·Japanese",
+   "rating": "1 star"
+  },
+  {
+   "name": "BB's",
+   "cuisine": "$$·Filipino",
+   "rating": "Bib Gourmand"
+  },
+  {
+   "name": "SunnysChinese",
+   "cuisine": "$$·Chinese",
+   "rating": "Bib Gourmand"
+  },
+  {
+   "name": "SumiLiciousSmokedMeat\u0026Deli",
+   "cuisine": "$·Deli",
+   "rating": "Bib Gourmand"
+  },
+  {
+   "name": "Frilu",
+   "cuisine": "$$$$·Contemporary",
+   "rating": "1 star"
+  },
+  {
+   "name": "Yukashi",
+   "cuisine": "$$$$·Japanese",
+   "rating": "1 star"
+  },
+  {
+   "name": "Edulis",
+   "cuisine": "$$$$·MediterraneanCuisine",
+   "rating": "1 star"
+  },
+  {
+   "name": "DonAlfonso1890",
+   "cuisine": "$$$$·Italian",
+   "rating": "1 star"
+  },
+  {
+   "name": "BarRaval",
+   "cuisine": "$$·Spanish",
+   "rating": "Bib Gourmand"
+  },
+  {
+   "name": "WhiteLilyDiner",
+   "cuisine": "$$·Creative",
+   "rating": "Bib Gourmand"
+  },
+  {
+   "name": "AlobarYorkville",
+   "cuisine": "$$$$·French",
+   "rating": "1 star"
+  },
+  {
+   "name": "Quetzal",
+   "cuisine": "$$$$·Mexican",
+   "rating": "1 star"
+  },
+  {
+   "name": "FondaBalam",
+   "cuisine": "$$·Mexican",
+   "rating": "Bib Gourmand"
+  },
+  {
+   "name": "Shoushin",
+   "cuisine": "$$$$·Japanese",
+   "rating": "1 star"
+  },
+  {
+   "name": "SushiMasakiSaito",
+   "cuisine": "$$$$·Japanese",
+   "rating": "2 stars"
+  },
+  {
+   "name": "Tiflisi",
+   "cuisine": "$$·CentralAsian",
+   "rating": "Bib Gourmand"
+  }
+ ]
+}

@@ -3,6 +3,7 @@ package main
 import (
 	"encoding/json"
 	"fmt"
+	"os"
 	"regexp"
 	"strings"
 
@@ -39,13 +40,30 @@ func main() {
 	})
 
 	c.OnScraped(func(r *colly.Response) {
-		jsonData, err := json.Marshal(restaurants)
+		// making the json output prettier
+		jsonData, err := json.MarshalIndent(restaurants, "", " ")
 		if err != nil {
 			fmt.Println("Error serializing JSON:", err)
 			return
 		}
-		fmt.Println(string(jsonData))
+
+		// Create a file for JSON
+		file, err := os.Create("output.json")
+		if err != nil {
+			fmt.Println("Error creating file:", err)
+			return
+		}
+
+		// Write to JSON
+		_, err = file.Write(jsonData)
+		if err != nil {
+			fmt.Println("Error writing to file:", err)
+			return
+		}
+
+		fmt.Println("Successfully written data to output.json")
 		fmt.Println("Finished", r.Request.URL)
+		fmt.Println(string(jsonData))
 	})
 
 	c.OnRequest(func(r *colly.Request) {
@@ -83,6 +101,7 @@ func extractRating(imageSrcs []string) string {
 func cleanText(input string) string {
 	cleaned := strings.ReplaceAll(input, "\n", " ")
 	cleaned = strings.ReplaceAll(cleaned, "\t", " ")
+	// https://yourbasic.org/golang/remove-duplicate-whitespace/
 	// reg exp to replace multiple spaces with no space
 	re := regexp.MustCompile(`\s+`)
 	cleaned = re.ReplaceAllString(cleaned, "")
